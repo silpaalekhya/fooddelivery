@@ -1,0 +1,30 @@
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="text-center">
+                    <h1>Login</h1>
+                    <h6>Please enter email & password</h6>
+                </div>
+                <form>
+                    <form (ngSubmit)="userLogin()">
+                           <div class="mb-3">
+                             <label for="exampleInputEmail1" class="form-label">Email address</label>
+                             <input  type=" email" class="form-control" id="email" name="email" [(ngModel)]=login.email>
+                           </div>
+                           <div class="mb-3">
+                             <label for="exampleInputPassword1" class="form-label">Password</label>
+                             <input  type="password" class="form-control" id="password" name="password" [(ngModel)]=login.password>  
+                           </div>
+                           <button type="submit" class="btn btn-primary" >Login</button>
+                           
+                    </form>
+                    <a style="color: white;margin-top: 10px;" routerLink="/Signup">New User? Click here to Signup!! </a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+

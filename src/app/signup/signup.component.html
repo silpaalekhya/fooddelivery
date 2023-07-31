@@ -1,0 +1,47 @@
+<div class="container">
+    <div class="row">
+     <div class="col-md-6">
+ 
+         <div class="card">
+             <h1>Sign Up</h1>
+             <h6>Register Yourself</h6>
+  
+    
+     <form (ngSubmit)="userSignup()">
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label" >Name</label> 
+          <input type="text" class="form-control" id="name" name="name" [(ngModel)]=signup.name >
+        </div>
+        
+        <div class="mb-3">
+         
+          <label for="exampleFormControlInput1" class="form-label">Email</label>
+          <input  type="email" class="form-control" id="email" name="email" [(ngModel)]=signup.email >
+         </div>
+ 
+         <div class="mb-3">
+             <label for="exampleFormControlInput1" class="form-label">Mobile number</label>
+             <input type="text" class="form-control" id="phone" name="phone" [(ngModel)]=signup.phone>
+        </div>
+ 
+       <div class="mb-3">
+           <label for="exampleFormControlInput1" class="form-label">Password</label>
+           <input type="password" class="form-control" id="password" name="password" [(ngModel)]=signup.password>
+       </div>
+ 
+      
+   
+  
+       <input type="submit" routerLink="/Signup" class="btn btn-success" value="Register">
+     </form>
+  
+      <a style="color: white;margin-top: 10px;" routerLink="/Login">Already regsistered? Click to login!! </a>
+    
+    
+ 
+ </div>
+     </div>
+     
+    </div>
+   
+   

@@ -1,0 +1,50 @@
+/* About Section Start */
+.about{
+    background: white;
+    padding: 100px 8% 120px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1.5rem;
+}
+.about-img img{
+    max-width: 530px;
+    height: auto;
+    width: 100%;
+}
+.about-text h3{
+    font-size: 30px;
+    line-height: 1;
+}
+.about-text p{
+    letter-spacing: 1px;
+    margin-bottom: 4rem;
+    margin-top: 10px;
+}
+#about-btn{
+    padding: 10px;
+    border: 1px solid orange;
+    color: black;
+    border-radius: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+#about-btn:hover{
+    background: orange;
+    color: white;
+}
+@media (max-width:920px){
+    .about{
+        grid-template-columns: 1fr;
+    }
+    .about-img{
+        text-align: center;
+        order: 2;
+    }
+    .about-img img{
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+    }
+}
+/* About Section End */
